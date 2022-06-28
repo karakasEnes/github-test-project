@@ -13,10 +13,12 @@ const Cart = (props) => {
 
   const cartItemRemoveHandler = (id) => {
     cartCtx.removeItem(id);
+    console.log("ADDED inside forked")
   };
 
   const cartItemAddHandler = (item) => {
     cartCtx.addItem({ ...item, amount: 1 });
+    console.log("ADDED inside forked, second change")
   };
 
   const cartItems = (
